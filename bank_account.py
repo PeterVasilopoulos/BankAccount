@@ -31,8 +31,7 @@ class BankAccount:
 
 
 account1 = BankAccount(0.01, 200)
-account1.display_account_info()
-account1.deposit(10).deposit(20)
+account1.deposit(10).deposit(20).deposit(50).withdraw(100).yield_interest().display_account_info()
 
 account2 = BankAccount()
-account2.display_account_info()
+account2.deposit(1000).deposit(150).withdraw(900).withdraw(100).withdraw(10).withdraw(20).yield_interest().display_account_info()
